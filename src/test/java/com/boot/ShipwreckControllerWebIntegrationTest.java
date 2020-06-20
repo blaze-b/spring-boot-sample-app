@@ -25,7 +25,8 @@ public class ShipwreckControllerWebIntegrationTest {
 	@Test
 	public void testListALl()  throws IOException{
 		RestTemplate restTemplate = new TestRestTemplate();
-		ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:9060/api/v1/shipwrecks", String.class);
+		ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:9060/api/v1/shipwrecks",
+				String.class);
 		assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
 		ObjectMapper mapper = new ObjectMapper();
 		JsonNode responseJson = mapper.readTree(response.getBody());

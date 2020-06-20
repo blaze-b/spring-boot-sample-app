@@ -33,3 +33,4 @@ build/
 # Application generated files
 *.log
 *.log.gz
+/.idea/

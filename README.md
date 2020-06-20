@@ -1,4 +1,4 @@
-# das-boot
+# Spring-boot-sample-app
 
 Java, Core Spring and Spring MVC
 
